@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+    <ImageView
+
+        android:id="@+id/imageview"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/a"/>
+
+    <TextView
+        android:id="@+id/textviewjudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/imageview"
+        android:layout_toRightOf="@id/imageview"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        tools:text="JUDUL"/>
+
+
+    <TextView
+        android:id="@+id/textviewdeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textviewjudul"
+        android:layout_alignStart="@id/textviewjudul"
+        android:layout_below="@+id/textviewjudul"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        tools:text="DESKRIPSI"/>
+
+
+</RelativeLayout>
